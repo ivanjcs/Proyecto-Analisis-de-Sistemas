@@ -171,6 +171,9 @@ def show_signup_form():
             next_page = url_for('index')
         return redirect(next_page)
     return render_template("signup_form.html", form=form)
+
+
+##holaaaa
 # termina registrarse
 
 @app.route('/login', methods=['GET', 'POST'])
