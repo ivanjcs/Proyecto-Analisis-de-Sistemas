@@ -1,0 +1,172 @@
+body {
+  display: flex;
+  background-color: #F5F5F5;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-top: 80px;
+}
+
+/* MENU HORIZONTAL */
+header {
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo2 {
+  width: auto;
+  height: 40px;
+  font-size: 50px;
+  font-family: "Kunstler Script";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+.logo2:hover {
+  color: #4397f5;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  font-weight: 600;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #2b2f38;
+  transition: color 0.3s ease;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+nav a:hover {
+  color: #4397f5;
+}
+nav p{
+  margin-right: 20px;
+  color:#4397f5;
+}
+/* FIN MENU HORIZONTAL */
+
+.clase0 {
+  background-color: #ffffff;
+  width: 1100px;
+  margin: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clase1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.clase2 {
+  width: 100%;
+  background-color: #E6E6E6;
+  height: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.clase2 input[type="text"]{
+  margin-top: 5px;
+  width: 250px;
+  height:30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #ddd;
+}
+.clase2 input[type="text"]:focus {
+  outline: none;
+  color: #444;
+  border-color: #2196F3;
+}
+
+/* Cargar producto */
+.clase2-link {
+  color: #2b2f38;
+  transition: color 0.3s ease;
+  font-style: inherit;
+  font-weight: inherit;
+  text-align: center;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 730px;
+  height: 40px; /* Ajusta la altura según tu diseño */
+  align-items: center;
+  justify-content: center;
+  background-color: #E6E6E6; /* Añade el color de fondo */
+  text-decoration: none; /* Quita la subrayado predeterminado */
+  border: 1px solid #ddd; /* Añade un borde */
+}
+
+.clase2-link:hover {
+  color: #4397f5;
+  background-color: #ddd; /* Cambia el color de fondo al pasar el ratón */
+}
+
+
+#main-container {
+  margin: 5px 20px 30px 20px;
+  width: 970px;
+}
+
+.clase1 {
+  font-size: 25px;
+  font-family: "Serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barra-celeste {
+  width: 80px; /* Ancho de la barra */
+  height: 3px; /* Altura de la barra (puedes ajustar según tus preferencias) */
+  background-color: #4397f5; /* Color celeste */
+  margin-top:-5px;
+  margin-bottom: 10px;
+}
+table {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid #cecece;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tr:hover td {
+  background-color: #F5F5F5;
+}
+
+thead {
+  background-color: #4397f5;
+  color: #eeeeee;
+}
+
+form {
+  display: flex;
+}

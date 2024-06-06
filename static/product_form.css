@@ -1,0 +1,207 @@
+body {
+  display: flex;
+  background-color: #F5F5F5;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-top: 80px;
+}
+
+/* MENU HORIZONTAL */
+header {
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo2 {
+  width: auto;
+  height: 40px;
+  font-size: 50px;
+  font-family: "Kunstler Script";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+.logo2:hover {
+  color: #4397f5;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  font-weight: 600;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #2b2f38;
+  transition: color 0.3s ease;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+nav a:hover {
+  color: #4397f5;
+}
+
+/* FIN MENU HORIZONTAL */
+
+.clase0 {
+  background-color: #ffffff;
+  width: 500px;
+  margin: 5px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clase1 {
+  font-size: 25px;
+  font-family: "Serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barra-celeste {
+  width: 80px; /* Ancho de la barra */
+  height: 3px; /* Altura de la barra (puedes ajustar según tus preferencias) */
+  background-color: #4397f5; /* Color celeste */
+  margin-top:-5px;
+  margin-bottom: 10px;
+}
+.login-form {
+  padding-bottom: 10%;
+}
+
+h3 {
+  margin-top:10px;
+  margin-bottom:10px;
+  color: #2b2f38;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"], .login-form input[type="date"],.login-form input[type="number"]{
+  display: block;
+  padding: 15px 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  transition: border-width 0.2s ease;
+  border-radius: 2px;
+  color: #ccc;
+}
+.login-form input[type="button"] {
+  height: 30px;
+  width: 100px;
+  margin-left: 50px;
+  background: #75b3fa;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Serif', sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+.login-form input[type="button"]:hover{
+  background-color: #4397f5;
+}
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  outline: none;
+  color: #444;
+  border-color: #2196F3;
+}
+
+.login-form input[type="text"]{
+  margin-top: 10px
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.login-button {
+  height: 40px; /* Ajusta la altura según tus preferencias */
+  width: 200px; /* Ajusta el ancho según tus preferencias */
+  background: #75b3fa;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Serif', sans-serif;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px; /* Ajusta el tamaño del texto según tus preferencias */
+}
+
+.login-button:hover {
+  background-color: #4397f5;
+}
+.clase4 {
+  border: 1px solid #a7367c;
+  padding: 10px;
+  background-color: #a7367c;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Helvetica', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Logo central */
+.logo1 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: -25px;
+  width: auto;
+  height: 100px;
+  font-size: 130px;
+  font-family: "Kunstler Script";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.logo1:hover{
+  color: #4397f5;
+}
+/* FIN logo central */
+.clase4:hover {
+  background-color: #872e5c;
+}
+
+/* Agrega estos estilos al final de tu archivo CSS */
+.styled-input {
+  display: block;
+  padding: 10px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  transition: border-width 0.2s ease;
+  border-radius: 2px;
+  color: #2b2f38;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.styled-input:focus {
+  outline: none;
+  color: #444;
+  border-color: #2196F3;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='product_form.css') }}">
+    <title>agregar producto</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo2">Enigma</div>
+        <nav>
+            <a href="#" class="nav-link">Inicio</a>
+            <a href="{{ url_for('logout') }}" class="nav-link">Cerrar Sesión</a>
+        </nav>
+    </header>
+    <div class="clase0">
+        <h1 class="clase1">Cargar producto</h1>
+        <div class="barra-celeste"></div>
+        <div class="logo1">Enigma</div>
+
+        <form action="" method="post" novalidate class="login-form">
+            {{ form.hidden_tag() }}
+        <div>
+            <label>Nombre:</label>
+            {{ form.name(size=128,class="styled-input") }} <br>
+            {% for error in form.name.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            <label>Descripción:</label>
+            {{ form.descripcion(size=128,class="styled-input") }} <br>
+            {% for error in form.descripcion.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            <label>Precio:</label>
+            {{ form.precio(class="styled-input") }} <br>
+            {% for error in form.precio.errors %}
+                <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </div>
+        <div>
+            <label>Talle:</label>
+            {{ form.talle(class="styled-input") }} <br>
+            {% for error in form.talle.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            <label>Fecha de Ingreso:</label>
+            {{ form.fechaingreso(class="styled-input") }} <br>
+            {% for error in form.fechaingreso.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            <label>Cantidad:</label>
+            {{ form.cantidad(class="styled-input") }} <br>
+            {% for error in form.cantidad.errors %}
+                <span style="color: red;">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div class="button-container">
+            {{ form.submit(id="login-button", class="login-button") }}
+        </div>
+        </form>
+    </div>
+</body>
+</html>
