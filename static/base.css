@@ -17,22 +17,28 @@ body {
     padding: 0 10px 0 0;
 }
 form {
-    margin-bottom: 20px;
+    margin-bottom: 20px;width: 50%; /* O cualquier ancho fijo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 600px; /* Ajusta el ancho máximo del formulario */
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+    min-width: 200px; /* Ancho mínimo del campo */
 }
 
 form label {
     margin-bottom: 5px;
 }
 
-form input[type="text"] {
-    width: 10%;
-    padding: 8px;
+form input[type="text"] {  /* afecta a todos, name, email...*/
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
 }
 
 form input[type="submit"] {
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 14px;
     background-color: hotpink;
     color: #fff;
     border: none;
@@ -83,3 +89,32 @@ p a {
 p a:hover {
     background-color: red;
 }
+
+
+.form-group {
+    margin-bottom: 15px; /* Espacio inferior entre los grupos de formulario */
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+.form-group label {
+    display: block; /* Hace que las etiquetas se muestren en bloques */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+.form-group input {
+    width: 100%; /* Hace que el campo de entrada ocupe todo el ancho del contenedor */
+    padding: 10px; /* Espacio interno dentro del campo */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%; /* Hace que los campos de entrada ocupen todo el ancho del contenedor */
+    padding: 8px; /* Espacio interno dentro del campo */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+

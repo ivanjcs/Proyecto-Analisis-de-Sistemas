@@ -1,0 +1,22 @@
+<!-- templates/register_sale.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar Venta</title>
+</head>
+<body>
+    <h1>Registrar Venta</h1>
+    <form method="POST" action="{{ url_for('register_sale') }}">
+        <label for="employee_id">ID del Empleado:</label>
+        <input type="text" name="employee_id" required>
+        <br>
+        <label for="product_id">ID del Producto:</label>
+        <input type="text" name="product_id" required>
+        <br>
+        <label for="quantity">Cantidad:</label>
+        <input type="number" name="quantity" required>
+        <br>
+        <input type="submit" value="Registrar Venta">
+    </form>
+</body>
+</html>

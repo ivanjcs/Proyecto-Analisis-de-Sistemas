@@ -15,7 +15,7 @@
             <div class="logo2">Enigma</div>
             <nav>
                 <p>{{ current_user.name }}</p>
-                <a href="#" class="nav-link">Inicio</a>
+                <a href="{{ url_for('index') }}" class="nav-link">Inicio</a>
                 <a href="{{ url_for('logout') }}" class="nav-link">Cerrar Sesión</a>
                 
             </nav>
@@ -44,21 +44,28 @@
                 <table border="1">
                     <thead>
                         <tr>
-                            <th>Meses</th>
-                            <th>Ventas 2022</th>
-                            <th>Ventas 2023</th>
-                            <th>Proyección 2024</th>
+                            <th>ID</th>
+                            <th>Empleado</th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Fecha</th>
+                            <th>Acción</th> <!-- Nueva columna -->
                         </tr>
                     </thead>
                     <tbody>
                         {% for venta in ventas %}
-                                <td>{{ i }}</td> <!--hacer una iteracion, sera 1, 2, 3...-->
-                                <td>{{ venta.1 }}</td>
-                                <td>{{ venta.2 }}</td>
-                                <td>{{ venta.3 }}</td>
+                            <tr>
+                                <td>{{ venta[0] }}</td>
+                                <td>{{ venta[1] }}</td>
+                                <td>{{ venta[2] }}</td>
+                                <td>{{ venta[3] }}</td>
+                                <td>{{ venta[4] }}</td>
                                 <td>
-                                    <a href="{{url_for('edit_product', product_id=product[0]) }}"><img src="{{ url_for('static', filename='editar.jpg') }}" height="20" width="20"></a>
-                                    <a href="{{ url_for('delete_product', product_id=product[0]) }}"><img src="{{ url_for('static', filename='borrar.jpg') }}" height="20" width="20"></a>
+                                    <form action="{{ url_for('delete_venta', venta_id=venta[0]) }}" method="post" style="display:inline;">
+                                        <button type="submit" onclick="return confirm('¿Estás seguro de que deseas eliminar esta venta?')">
+                                            <img src="{{ url_for('static', filename='borrar.jpg') }}" height="20" width="20" alt="Eliminar">
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         {% endfor %}
